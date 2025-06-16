@@ -1,8 +1,6 @@
 package org.dsa.arrays_hashing;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class ContainsDuplicates {
 
@@ -21,6 +19,9 @@ public class ContainsDuplicates {
 
     public static void main(String args[]){
         var nums = new int[]{1, 2, 3, 4};// tested with {1,2,3,4}, {1,2,2},{}
+        List<Integer> num =Arrays.asList(1, 2, 3, 4);
+
+
         System.out.println(containsDuplicates( nums));
     }
 
