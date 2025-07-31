@@ -25,5 +25,22 @@ public class Employee implements  Comparable<Employee>{
 
 
     // Constructors, getters, setters, toString
+
+    @Override
+    public boolean equals(Object o){
+        if(o==null || o.getClass()!=this.getClass())
+            return false;
+        if(o==this) return true;
+        Employee e= (Employee)o;
+        return this.getAge()==e.getAge();
+    }
+
+    @Override
+    public int hashCode(){
+
+        return this.getId();
+    }
+
+
 }
 

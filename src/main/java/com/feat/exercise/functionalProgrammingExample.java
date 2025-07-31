@@ -16,7 +16,7 @@ StringBuilder cbuilder = new StringBuilder();
             }
         };
 
-        chef lambdachef= ingredients -> "Cooked " + ingredients;
+        chef lambdachef= i -> "Cooked " + i;
         System.out.println( lambdachef.cookedMeal("Dosa"));
 
     }
