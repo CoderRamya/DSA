@@ -17,8 +17,6 @@ public class trial {
         //num.stream().distinct().forEach(System.out::println);
         //num.stream().collect(Collectors.toSet()).forEach(System.out::println);
         num.stream().filter(s->s.toString().startsWith("4")).toList().forEach(System.out::println);
-
-
         num.stream().filter(i->i%2==0).forEach(System.out::println);
 
         List<String> names= Arrays.asList("apple", "pear","orange","kiwi","banana");
